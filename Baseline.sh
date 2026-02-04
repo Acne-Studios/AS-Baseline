@@ -5,7 +5,7 @@
 #   @BigMacAdmin on the MacAdmins Slack
 #   trevor@secondsonconsulting.com
 
-scriptVersion="2.4beta2"
+scriptVersion="2.4beta2-a1"
 
 # MIT License
 # 
@@ -53,15 +53,15 @@ BaselineConfig="/Library/Managed Preferences/com.secondsonconsulting.baseline.pl
 BaselineDir="/usr/local/Baseline"
 BaselineTempDir="$(mktemp -d /var/tmp/baselineTempDir.XXXXXXX)"
 customConfigPlist="$BaselineDir/BaselineConfig.plist"
-logFile="/var/log/Baseline.log"
-reportFile="/var/log/Baseline-Report.txt"
+logFile="/var/log/Acne_Runtime_Baseline.log"
+reportFile="/var/log/Acne_Runtime_Baseline_Report.txt"
 BaselinePath="$BaselineDir/Baseline.sh"
 BaselineScripts="$BaselineDir/Scripts"
 BaselinePackages="$BaselineDir/Packages"
 BaselineIcons="$BaselineDir/Icons"
 BaselineLaunchDaemon="/Library/LaunchDaemons/com.secondsonconsulting.baseline.plist"
 BaselineTempIconsDir="${BaselineTempDir}/TempIconsDir" ; mkdir "$BaselineTempIconsDir"
-ScriptOutputLog="/var/log/Baseline-ScriptsOutput.log"
+ScriptOutputLog="/var/log/Acne_Runtime_Baseline_ScriptsOutput.log"
 
 #Binaries
 pBuddy="/usr/libexec/PlistBuddy"
